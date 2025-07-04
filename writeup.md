@@ -21,4 +21,22 @@ Interesting , this is a classic setup for an IDOR (Insecure Direct Object Refere
 
 I decide to download the **0.pcap** file . You can use any reader but i use Wireshark. Now if youre aware of how a login request works , youll just be able to follow the sequence and reach there by yourself , if not if you look at Frame 40 , youll see the password. This happens due to the password not being encrypted .
 
+```
+ssh nathan@target_ip
 
+```
+Connect to SSH using the same password and it worked 
+WE ARE IN!!!!
+
+Now to see the files present in this directory 
+
+```
+ls
+```
+No **-la** command needed here
+Now you have user.txt
+
+```
+cat user.txt
+```
+Use this command to see the flag
